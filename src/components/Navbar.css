@@ -1,0 +1,57 @@
+/* .loader {
+    color: rgb(124, 124, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+    position: relative;
+}
+
+.words {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#fff 10%,
+            transparent 30%,
+            transparent 70%,
+            #fff 90%);
+    z-index: 20;
+}
+
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #000;
+    transition: transform 0.5s ease-in-out;
+}
+
+.loader:hover .words {
+    animation: spin_on_hover 1s forwards;
+}
+
+@keyframes spin_on_hover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+} */
