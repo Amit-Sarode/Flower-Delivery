@@ -49,7 +49,7 @@ function Home() {
                 {/* bottom section */}
 
                 <div className='flex gap-7'>
-                    <img className='h-[236px] w-[189px] block' src='public/assets/img hero.svg'></img>
+                    <img className='h-[236px] w-[189px] block' src='src/assets/Home/img hero.svg'></img>
                     <div className='border-l border-slate-950'></div>
                     <p className='text-wrap text-[14px] font-Gilroy font-[550] float-end '>
                         Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.
@@ -60,11 +60,11 @@ function Home() {
             {/* page2 */}
 
             <div className='page2 w-[50%] float-right font-Gilroy'>
-                <ProductCard path="#" title="Fresh Flowers" imageSrc='public/assets/card item-2.svg' />
-                <ProductCard path="#" title="Dried Flowers" imageSrc='public/assets/card item.svg' />
-                <ProductCard path="#" title="Live Plants" imageSrc='public/assets/card item-3.svg' />
-                <ProductCard path="#" title="Aroma Candles" imageSrc='public/assets/card item-1.svg' />
-                <ProductCard path="#" title="Fresheners" imageSrc='public/assets/card item-4.svg' />
+                <ProductCard path="#" title="Fresh Flowers" imageSrc='src/assets/Home/card item-2.svg' />
+                <ProductCard path="#" title="Dried Flowers" imageSrc='src/assets/Home/card item.svg' />
+                <ProductCard path="#" title="Live Plants" imageSrc='src/assets/Home/card item-3.svg' />
+                <ProductCard path="#" title="Aroma Candles" imageSrc='src/assets/Home/card item-1.svg' />
+                <ProductCard path="#" title="Fresheners" imageSrc='src/assets/Home/card item-4.svg' />
             </div>
 
             {/* page3 */}
@@ -132,7 +132,7 @@ function Home() {
             {/* page8 */}
             <div>
                 <div>
-                    <img src='public/assets/Right colum.svg'></img>
+                    <img src='src/assets/Home/Right colum.svg'></img>
                 </div>
                 <div>
                     <h1>Follow us</h1>
@@ -160,7 +160,7 @@ function Home() {
                 <h1>Our Service</h1>
             </div>
             <div>
-                <img src='public/assets/image-service-1.svg'></img>
+                <img src='src/assets/Home/image-service-1.svg'></img>
                 <div>
                     <h3>service</h3>
                     <h1>Flower Subcriptions</h1>
@@ -171,7 +171,7 @@ function Home() {
 
             {/* page10 */}
             <div>
-                <img src='public/assets/Service2Section.svg'></img>
+                <img src='src/assets/Home/Service2Section.svg'></img>
                 <h3>service</h3>
                 <h1>Wedding & Event Decor</h1>
                 <p>
