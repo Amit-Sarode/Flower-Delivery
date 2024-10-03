@@ -13,6 +13,9 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 import ProductCard from './Product';
+import serviceSvg2 from '../assets/Home/Service2Section.svg';
+import serviceSvg1 from '../assets/Home/image-service-1.svg';
+import card1 from '../assets/Home/Service2Section.svg';
 
 
 
@@ -160,7 +163,7 @@ function Home() {
                 <h1>Our Service</h1>
             </div>
             <div>
-                <img src='src/assets/Home/image-service-1.svg'></img>
+                <img src={serviceSvg1}></img>
                 <div>
                     <h3>service</h3>
                     <h1>Flower Subcriptions</h1>
@@ -171,7 +174,7 @@ function Home() {
 
             {/* page10 */}
             <div>
-                <img src='src/assets/Home/Service2Section.svg'></img>
+                <img src={serviceSvg2} alt="Service Section" />
                 <h3>service</h3>
                 <h1>Wedding & Event Decor</h1>
                 <p>
