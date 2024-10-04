@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './Home.css'
 import Navbar from './Navbar';
+import ProductCard from './Product';
 import { Link } from 'react-router-dom'
 import { PiPhoneCallFill, PiTelegramLogoBold } from "react-icons/pi";
 import { RiPinterestLine } from "react-icons/ri";
@@ -11,23 +12,31 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-import ProductCard from './Product';
 import serviceSvg2 from '../assets/Home/Service2Section.svg';
 import serviceSvg1 from '../assets/Home/image-service-1.svg';
-import card1 from '../assets/Home/Service2Section.svg';
 
 
 
 function Home() {
-    const page1 = useRef(null)
+    const page1Ref = useRef(null)
+    const page2Ref = useRef(null)
     useGSAP(
         () => {
-
-            gsap.from('.page1', { y: 360 });
-        },
-        {}
-    );
+            const page1 = page1Ref.current;
+            const page2 = page2Ref.current;
+            if (page1 && page2) {
+                gsap.to(page1, {
+                    scrollTrigger: {
+                        trigger: page1,
+                        start: "top top",
+                        pin: true,
+                        end: () => `+=${page2.offsetHeight}`,
+                        scrub: 1,
+                    },
+                }
+                )
+            }
+        }, [])
 
 
 
@@ -35,7 +44,7 @@ function Home() {
         <>
             <Navbar />
             {/* top section */}
-            <div useRef className=' page1 w-[50%] p-20 flex flex-col gap-10 float-left'>
+            <div ref={page1Ref} className='h-[100vh] page1 w-[50%] p-20 flex flex-col gap-10 float-left'>
                 <div className='text-[65px] font-Gilroy font-[900] tracking-wider w-[50%]'>
                     <h1>Kyiv</h1>
                     <h1>LuxeBouquets
@@ -62,7 +71,7 @@ function Home() {
 
             {/* page2 */}
 
-            <div className='page2 w-[50%] float-right font-Gilroy'>
+            <div className=' page2 w-[50%] float-right font-Gilroy'>
                 <ProductCard path="#" title="Fresh Flowers" imageSrc='src/assets/Home/card item-2.svg' />
                 <ProductCard path="#" title="Dried Flowers" imageSrc='src/assets/Home/card item.svg' />
                 <ProductCard path="#" title="Live Plants" imageSrc='src/assets/Home/card item-3.svg' />

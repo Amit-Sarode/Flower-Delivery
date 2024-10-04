@@ -14,7 +14,6 @@ function Navbar() {
         name: ["Cart", "Cart"], path: "/"
     },]
 
-
     return (
         <>
             <div className='flex justify-between h-[83px] w-[100%] border border-[#121212] font-Gilroy font-semibold '>
