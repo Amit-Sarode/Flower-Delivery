@@ -1,0 +1,55 @@
+.main {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    z-index: 20;
+}
+
+.one {
+    position: absolute;
+    z-index: 10;
+    transition: opacity 1s ease-in-out;
+}
+
+.two {
+    color: #737373;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.main:hover .one {
+    animation: fadeOutTop 0.2s ease-in-out forwards;
+}
+
+.main:hover .two {
+    animation: fadeInBottom 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeOutTop {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
