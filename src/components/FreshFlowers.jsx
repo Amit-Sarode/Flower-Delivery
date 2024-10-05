@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer';
 
 
 const FreshFlowersData = [
@@ -56,31 +57,36 @@ const FreshFlowersData = [
 ]
 
 function FreshFlowers() {
-  return (
-    <div >
-      <Navbar/>
-      <div className='content grid grid-cols-4 h-[100vh] '>
-        <div className='ImgDiv col-span-2 h-max'>
-            <img src="../src/assets/category/fresh/left colum.svg" alt="" />
-        </div>
-        <div className='col-span-2' >
-            <div className='grid grid-cols-2'>
-                {
-                    FreshFlowersData.map((curr,index)=>{
-                        return(
-                            <div key={index} className='relative flex justify-center h-max w-full '>
-                                <img src={curr.path} alt="" className='hover:'  />
-                                <h1 className='absolute bottom-8 font-Gilroy font-semibold '>{curr.name}</h1>
-                                <p className='absolute bottom-4 font-Gilroy font-semibold text-[#808080] text-xs'>{`Price ${curr.price}`}</p>
-                            </div>
-                        )
-                    })
-                }
+    return (
+      <div>
+        <Navbar />
+        <div className="content grid grid-cols-4 h-[100vh] overflow-y-auto overflow-x-hidden relative  ">
+          <div className="ImgDiv col-span-2 h-max sticky top-0 overflow-auto ">
+            <img src="../src/assets/category/fresh/left colum.svg" alt="Left Column" />
+            <h1 className="absolute top-56 left-32  text-white text-6xl font-medium">Fresh Flowers</h1>
+          </div>
+          <div className="col-span-2">
+            <div className="grid grid-cols-2">
+              {FreshFlowersData.map((curr, index) => {
+                return (
+                  <div key={index} className="relative flex justify-center h-[312px] w-[314px] overflow-hidden">
+                    <img src={curr.path} alt={curr.name} className="hover:scale-110 transition-all duration-500 ease-in-out  h-full w-full object-cover " />
+                    <h1 className="absolute bottom-8 font-Gilroy font-semibold">
+                      {curr.name}
+                    </h1>
+                    <p className="absolute bottom-4 font-Gilroy font-semibold text-[#808080] text-xs">
+                      {`Price ${curr.price}`}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
+          </div>
         </div>
+        <Footer />
       </div>
-    </div>
-  )
-}
+    );
+  }
+  
 
 export default FreshFlowers
