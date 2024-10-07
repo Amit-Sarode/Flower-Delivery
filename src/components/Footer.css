@@ -1,12 +1,9 @@
-.address::after{
-    
-}
+.address::after {}
 
 .address .add2,
 .phone .phone2,
 .general .general2,
-.remind .remind2    
-{
+.remind .remind2 {
     content: "15/4 Khreshchatyk Street, Kyiv";
     position: absolute;
     color: #808080;
@@ -17,7 +14,7 @@
 .add1,
 .phone1,
 .remind1,
-.general1{
+.general1 {
     animation: fadeInBottom 150ms 1 reverse;
     color: black;
 }
@@ -25,18 +22,16 @@
 .address:hover .add1,
 .phone:hover .phone1,
 .remind:hover .remind1,
-.general:hover .general1
-{
+.general:hover .general1 {
     animation: fadeOutTop 150ms 1 forwards;
 }
 
 .address:hover .add2,
 .phone:hover .phone2,
 .remind:hover .remind2,
-.general:hover .general2
-{
+.general:hover .general2 {
     animation: fadeInBottom 150ms 1 forwards;
-    /* opacity: 1; */
+
 }
 
 
