@@ -5,19 +5,18 @@ import './Navbar.css'
 
 function Navbar() {
     const navItems = [{
-        name: ["Shop", "Shop"], path: "/"
+        name: ["Shop", "Shop"], path: "/category"
     }, {
-        name: ["Contact", "Contact"], path: "/"
+        name: ["About Us", "About Us"], path: "/about"
     }, {
-        name: ["Sign in", "Sign in"], path: "/"
+        name: ["Sign in", "Sign in"], path: "/signIn"
     }, {
-        name: ["Cart", "Cart"], path: "/"
+        name: ["Cart", "Cart"], path: "/cart"
     },]
-
 
     return (
         <>
-            <div className='flex justify-between h-[83px] w-[100%] border border-[#121212] font-Gilroy font-semibold '>
+            <div className='sticky top-0 z-50 bg-white  flex justify-between h-[83px] w-[100%] border border-[#121212] font-Gilroy font-semibold '>
                 <div className='flex w-[360px]'>
                     {navItems.slice(0, 2).map((items, index) => (
                         <Link
