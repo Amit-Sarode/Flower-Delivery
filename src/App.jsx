@@ -1,28 +1,32 @@
 import React from 'react'
 import Home from './components/Home'
-<<<<<<< HEAD
-import Freshners from './components/Shop/Freshners'
-function App() {
-  return (
-    <div className='font-serif'>
-      <Home></Home>
-      <Freshners></Freshners>
-    </div>
-=======
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import FreshFlowers from './components/FreshFlowers'
+import { Route, Routes } from 'react-router-dom'
+import Dried from './components/catagory/Dried'
+import Live from './components/catagory/Live'
+import FreshFlowers from './components/catagory/FreshFlowers'
+import Aroma from './components/catagory/Aroma'
+import Fresheners from './components/catagory/Fresheners'
+import About from './components/AboutUs'
+import Category from './components/Category'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/category/fresh-flowers' element={<FreshFlowers />} />
-        </Routes>
-      </BrowserRouter>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/freshflowers' element={<FreshFlowers />} />
+        <Route path='/dried' element={<Dried />} />
+        <Route path='/live' element={<Live></Live>} />
+        <Route path='/aroma' element={<Aroma />} />
+        <Route path='/fresheners' element={<Fresheners />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/category' element={<Category />} />
+      </Routes>
+      <Footer></Footer>
     </>
-    
->>>>>>> a2147ecd648ae033c4e85962b491e0e9341befbb
+
   )
 }
 

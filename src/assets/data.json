@@ -1,0 +1,223 @@
+{
+    "bg": {
+        "bgFreshFlowers": "src/assets/category/fresh/left colum.svg",
+        "bgFreshner": "src/assets/category/fresheners/difuser.webp",
+        "bgAroma": "src/assets/category/aroma/candels.webp",
+        "bgDried": "src/assets/category/dried/dried.webp",
+        "bgLivePlants": "src/assets/category/live/live plants.webp"
+    },
+    "FreshFlowers": [
+        {
+            "id": "1",
+            "name": "Snowfall",
+            "path": "src/assets/category/fresh/card item.svg",
+            "price": "$70"
+        },
+        {
+            "id": "2",
+            "name": "Blue Harmony",
+            "path": "src/assets/category/fresh/card item2.svg",
+            "price": "$58"
+        },
+        {
+            "id": "3",
+            "name": "Rosy Delight",
+            "path": "src/assets/category/fresh/card item3.svg",
+            "price": "$120"
+        },
+        {
+            "id": "4",
+            "name": "Dawn's Delight",
+            "path": "src/assets/category/fresh/card item4.svg",
+            "price": "$100"
+        },
+        {
+            "id": "5",
+            "name": "Serenity",
+            "path": "src/assets/category/fresh/card item5.svg",
+            "price": "$89"
+        },
+        {
+            "id": "6",
+            "name": "Autumn Symphony",
+            "path": "src/assets/category/fresh/card item6.svg",
+            "price": "$140"
+        },
+        {
+            "id": "7",
+            "name": "Rustic Charm",
+            "path": "src/assets/category/fresh/card item7.svg",
+            "price": "$89"
+        },
+        {
+            "id": "8",
+            "name": "Pink Elegance",
+            "path": "src/assets/category/fresh/card item8.svg",
+            "price": "$70"
+        },
+        {
+            "id": "9",
+            "name": "Mistical majesty",
+            "path": "src/assets/category/fresh/card item9.svg",
+            "price": "$99"
+        },
+        {
+            "id": "10",
+            "name": "Blazing BLossoms",
+            "path": "src/assets/category/fresh/card item10.svg",
+            "price": "$100"
+        }
+    ],
+    "DriedFlowers": [
+        {
+            "id": "1",
+            "name": "The Savoy",
+            "path": "src/assets/category/dried/card1.webp",
+            "price": "$58"
+        },
+        {
+            "id": "2",
+            "name": "The Suri",
+            "path": "src/assets/category/dried/card2.webp",
+            "price": "$70"
+        },
+        {
+            "id": "3",
+            "name": "The Naomi",
+            "path": "src/assets/category/dried/card3.webp",
+            "price": "$90"
+        },
+        {
+            "id": "4",
+            "name": "The Heath",
+            "path": "src/assets/category/dried/card4.webp",
+            "price": "$140"
+        },
+        {
+            "id": "5",
+            "name": "Frosty Winter",
+            "path": "src/assets/category/dried/card5.webp",
+            "price": "$99"
+        },
+        {
+            "id": "6",
+            "name": "Rosy Perfection",
+            "path": "src/assets/category/dried/card6.webp",
+            "price": "$130"
+        }
+    ],
+    "LivePlants": [
+        {
+            "id": "1",
+            "name": "The Snake Plant",
+            "path": "src/assets/category/live/card1.webp",
+            "price": "$58"
+        },
+        {
+            "id": "2",
+            "name": "The Fiddle Leaf Fig",
+            "path": "src/assets/category/live/card2.webp",
+            "price": "$70"
+        },
+        {
+            "id": "3",
+            "name": "The Large Monstera  Deliciosa",
+            "path": "src/assets/category/live/card3.webp",
+            "price": "$90"
+        },
+        {
+            "id": "4",
+            "name": "Large Magesty Palm",
+            "path": "src/assets/category/live/card4.webp",
+            "price": "$140"
+        },
+        {
+            "id": "5",
+            "name": "Money Tree",
+            "path": "src/assets/category/live/card5.webp",
+            "price": "$99"
+        },
+        {
+            "id": "6",
+            "name": "Birds Net Fern",
+            "path": "src/assets/category/live/card6.webp",
+            "price": "$130"
+        }
+    ],
+    "AromaCandles": [
+        {
+            "id": "1",
+            "name": "Ratten Grapefruit",
+            "path": "src/assets/category/aroma/card1.webp",
+            "price": "$58"
+        },
+        {
+            "id": "2",
+            "name": "Himalayan Salt & Rosewater",
+            "path": "src/assets/category/aroma/card2.webp",
+            "price": "$70"
+        },
+        {
+            "id": "3",
+            "name": "Charcoal Woods",
+            "path": "src/assets/category/aroma/card3.webp",
+            "price": "$90"
+        },
+        {
+            "id": "4",
+            "name": "Lime & Matcha",
+            "path": "src/assets/category/aroma/card4.webp",
+            "price": "$140"
+        },
+        {
+            "id": "5",
+            "name": "Bamboo",
+            "path": "src/assets/category/aroma/card5.webp",
+            "price": "$99"
+        },
+        {
+            "id": "6",
+            "name": "Driftwood",
+            "path": "src/assets/category/aroma/card6.webp",
+            "price": "$130"
+        }
+    ],
+    "Fresheners": [
+        {
+            "id": "1",
+            "name": "Cedar & Lavender",
+            "path": "src/assets/category/fresheners/card1.webp",
+            "price": "$58"
+        },
+        {
+            "id": "2",
+            "name": "Himalayan Salt & Rosewater",
+            "path": "src/assets/category/fresheners/card2.webp",
+            "price": "$70"
+        },
+        {
+            "id": "3",
+            "name": "Wild Mint & Eucalyptus",
+            "path": "src/assets/category/fresheners/card3.webp",
+            "price": "$90"
+        },
+        {
+            "id": "4",
+            "name": "Greapefruit",
+            "path": "src/assets/category/fresheners/card4.webp",
+            "price": "$140"
+        },
+        {
+            "id": "5",
+            "name": "Ocean Mist",
+            "path": "src/assets/category/fresheners/card5.webp",
+            "price": "$99"
+        },
+        {
+            "id": "6",
+            "name": "Driftwood",
+            "path": "src/assets/category/fresheners/card6.webp",
+            "price": "$130"
+        }
+    ]
+}

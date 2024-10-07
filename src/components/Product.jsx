@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import './Navbar.css'
 
 function ProductCard({ title, imageSrc, path, buttonText = "Shop now" }) {
     return (
-        <div className='flex'>
-            <div className='w-[50%] flex flex-col justify-center items-center'>
+        <div className='imgContainer flex w-[670px] hover:cursor-pointer'>
+            <div className=' flex w-[335px] flex-col justify-center items-center border border-slate-950'>
                 <h1 className='text-4xl font-[700] tracking-wide'>{title}</h1>
-                <Link to={path}>
-                    <button className='flex items-center font-bold'>
+                <Link to={path} className='flex items-center'>
+                    <button className='font-bold hover:border-slate-950 hover:border-b '>
                         {buttonText}
-                        <div className='text-3xl'><IoIosArrowRoundForward /></div>
-                    </button>
+                    </button><div className='arrow text-3xl ease-linear duration-300'><IoIosArrowRoundForward /></div>
                 </Link>
             </div>
-            <div className='h-[360px] w-[360px] overflow-hidden overflow-y-hidden border border-slate-950'>
-                <img className='transition-transform h-[360px] w-[360px]  duration-200 ease-linear hover:scale-150' src={imageSrc} alt='{title} image'></img>
+            <div className='flowerDiv h-full w-[335px] overflow-hidden border border-slate-950'>
+                <img className='flowerImg h-full w-[335px]  object-fit duration-200 ease-linear ' src={imageSrc} alt='{title} image'></img>
             </div>
         </div>
     );

@@ -12,3 +12,8 @@
     font-family: GilroyBold;
     src: url(./assets/Gilroy-FREE/Gilroy-ExtraBold.otf);
 }
+
+@font-face {
+    font-family: Zapfino;
+    src: url(assets/zapfino/ZapfinoExtraLT-One.otf);
+}

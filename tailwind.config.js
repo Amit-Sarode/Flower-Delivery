@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         Gilroy: ['Gilroy'],
         GilroyBold: ['GilroyBold'],
+        Zapfino: ['Zapfino']
       },
     },
   },
