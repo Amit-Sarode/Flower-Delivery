@@ -32,8 +32,8 @@ function Footer() {
                     <p className='text-sm text-[#808080]'>General Enquiry:</p>
                     <h2 className='general text-sm flex  flex-col font-semibold cursor-pointer'> <p className='general1 text-black'>Kiev.Florist.Studio@gmail.com</p><p className='general2'>Kiev.Florist.Studio@gmail.com</p> </h2>
                     <div>
-                        <h1>Follow Us</h1>
-                        <div className='flex'>
+                        <h1 className="text-[#808080] text-xl pt-5 font-sans">Follow Us</h1>
+                        <div className='text-xl flex gap-8 pt-3 cursor-pointer'>
                             <Link to={'#'}>
                                 <FaInstagram />
                             </Link>
