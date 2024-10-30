@@ -2,6 +2,11 @@ import React, { useRef } from 'react'
 import ProductCard from './Product';
 import serviceSvg2 from '../assets/Home/Service2Section.svg';
 import serviceSvg1 from '../assets/Home/image-service-1.svg';
+import freshFlowersImage from '../assets/Home/card item-2.svg';
+import driedFlowersImage from '../assets/Home/card item.svg';
+import livePlantsImage from '../assets/Home/card item-3.svg';
+import aromaCandlesImage from '../assets/Home/card item-1.svg';
+import freshenersImage from '../assets/Home/card item-4.svg';
 import { Link } from 'react-router-dom'
 import { PiPhoneCallFill, PiTelegramLogoBold } from "react-icons/pi";
 import { RiPinterestLine } from "react-icons/ri";
@@ -71,11 +76,11 @@ function Home() {
             </div>
             {/* page2 */}
             <div ref={page2Ref} className=' h-[100vh] page2 w-[50%] float-right font-Gilroy'>
-                <ProductCard path="#" title="Fresh Flowers" imageSrc='src/assets/Home/card item-2.svg' />
-                <ProductCard path="#" title="Dried Flowers" imageSrc='src/assets/Home/card item.svg' />
-                <ProductCard path="#" title="Live Plants" imageSrc='src/assets/Home/card item-3.svg' />
-                <ProductCard path="#" title="Aroma Candles" imageSrc='src/assets/Home/card item-1.svg' />
-                <ProductCard path="#" title="Fresheners" imageSrc='src/assets/Home/card item-4.svg' />
+                <ProductCard path="#" title="Fresh Flowers" imageSrc={freshFlowersImage} />
+                <ProductCard path="#" title="Dried Flowers" imageSrc={driedFlowersImage} />
+                <ProductCard path="#" title="Live Plants" imageSrc={livePlantsImage} />
+                <ProductCard path="#" title="Aroma Candles" imageSrc={aromaCandlesImage} />
+                <ProductCard path="#" title="Fresheners" imageSrc={freshenersImage} />
             </div>
 
             {/* page3 */}
