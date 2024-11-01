@@ -13,7 +13,7 @@ function Footer() {
             <div className='col-start-1 border-r border-black flex flex-col p-8 gap-5'>
                 <p>Remember to offer beautiful flowers from Kyiv Florist Studio Valentines Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or sharing your address</p>
                 <input type="text" className='w-full border-[1px] border-black p-3 ' placeholder='Your Email' />
-                <button className='remind  border-[1px] border-black p-3 bg-black text-white hover:bg-white hover:text-black'>REMIND</button>
+                <button className='remind  border-[1px] border-black p-3 bg-black text-white hover:bg-white hover:text-black ease-linear duration-300'>REMIND</button>
 
             </div>
             <div className='col-start-2 border-r border-black flex flex-col p-8 '>
