@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Navbar'
 import data from '../../assets/data.json'
 
 function Fresheners() {
@@ -7,7 +6,6 @@ function Fresheners() {
     const bg = data.bg.bgFreshner
     return (
         <div >
-            <Navbar />
             <div className='content grid grid-cols-4 h-[100vh] '>
                 <div className='ImgDiv col-span-2 h-max'>
                     <img src={bg} alt="" />

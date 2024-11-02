@@ -15,23 +15,12 @@ import { RiPinterestLine } from "react-icons/ri";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import './Navbar.css'
-// import { gsap } from "gsap";
-// import { useGSAP } from "@gsap/react";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-// gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
-
-
-
 function Home() {
-    const page1Ref = useRef(null)
-    const page2Ref = useRef(null)
-
     return (
         <>
             {/* top section */}
             <div className='h-[283.2vh]'>
-                <div ref={page1Ref} className='sticky top-20  page1 w-[50%] p-20 flex flex-col gap-10 float-left'>
+                <div className='sticky top-20  page1 w-[50%] p-20 flex flex-col gap-10 float-left'>
                     <div className='text-[65px] font-Gilroy font-[900] tracking-wider w-[50%]'>
                         <h1>Kyiv</h1>
                         <h1>LuxeBouquets
@@ -56,7 +45,7 @@ function Home() {
                     </div>
                 </div>
                 {/* page2 */}
-                <div ref={page2Ref} className=' h-[100vh] page2 w-[50%] float-right font-Gilroy'>
+                <div className=' h-[100vh] page2 w-[50%] float-right font-Gilroy'>
                     <ProductCard path="#" title="Fresh Flowers" imageSrc={freshFlowersImage} />
                     <ProductCard path="#" title="Dried Flowers" imageSrc={driedFlowersImage} />
                     <ProductCard path="#" title="Live Plants" imageSrc={livePlantsImage} />
@@ -101,7 +90,7 @@ function Home() {
                         </h2>
                         <p className=' usblock leading-4'>You can feel secure when placing an order with us, as we use industry-standard security measures to protect your payment information. Your transaction will be safe and hassle-free, so you can shop with confidence.</p>
                     </div>
-                    <div className='p-[69px] border border-gray-950'>
+                    <div className='p-[52px] border border-gray-950'>
                         <h2 className='usblock text-3xl font-[400] '>Subscription by your needs</h2>
                         <p className='usblock'>
                             With our subscription service tailored to your specific needs, you can enjoy the convenience of having beautiful bouquets delivered straight to your door at regular intervals. Our flexible service is perfect for busy individuals or those who want to ensure they always have fresh flowers on hand. You'll save time and money with this hassle-free solution to your floral needs.
@@ -131,35 +120,12 @@ function Home() {
                     </div>
                 </div>
             </div >
-            {/* page8 */}
-            {/* <div className='float-right h-[100vh] w-[50%]' >
-                <img className=' object-cover z-0' src={right}></img>
-                <div className='flex relative z-10 justify-end'>
-                    <h1>Follow us</h1>
-                    <div className='flex'>
-                        <Link to={'#'}>
-                            <FaInstagram />
-                        </Link>
-                        <Link to={'#'}>
-                            <RiPinterestLine />
-                        </Link>
-                        <Link to={'#'}>
-                            <FiFacebook />
-                        </Link>
-                        <Link to={'#'}>
-                            <FiTwitter />
-                        </Link>
-                        <Link to={'#'}>
-                            < PiTelegramLogoBold />
-                        </Link>
-                    </div>
-                </div>
-            </div> */}
+
             <div className='float-right h-[100vh] w-[50%] '>
                 <img className='object-cover h-[90vh] w-full' src={right} alt="Right Section Background" />
 
                 {/* Icon and Follow Us Container */}
-                <div className=' flex items-center justify-center space-y-4 border border-gray-950 h-20 '>
+                <div className='h-[10vh] flex items-center justify-center space-y-4 border border-gray-950 '>
                     <h1 className='text-3xl font-[500] w-[50%] h-full flex items-center justify-center border-r border-gray-950'>Follow us</h1>
                     <div className='flex space-x-4 w-[50%] items-center justify-center'>
                         <Link to={'#'}>
@@ -183,19 +149,19 @@ function Home() {
 
 
             {/* page9 */}
-            < div className='h-[20vh] w-[100%] flex items-center justify-center' >
+            < div className='h-[40vh] w-[100%] border border-gray-950 flex items-center justify-center' >
                 <h1 className='text-7xl font-Gilroy font-[600]'>Our Service</h1>
             </div >
 
-            <div className='w-[100%]'>
+            <div className='w-[100%] '>
                 <div className='h-[100vh] w-[50%] float-left '>
-                    <img className='transition-transform object-fit duration-200 ease-linear' src={serviceSvg1}></img>
+                    <img className='h-full w-full transition-transform object-fit duration-200 ease-linear' src={serviceSvg1}></img>
                 </div>
                 <div className='w-[50%] float-right flex flex-col p-20 justify-center items-center font-Gilroy gap-5' >
-                    <h3 className='font-[600] text-2xl tracking-wide'>service</h3>
-                    <h1 className='font-[900] text-4xl tracking-widest'>Flower Subcriptions</h1>
-                    <p className='text-wrap'>Experience the convenience and savings of regular flower deliveries with our flexible subscription service - up to 30% more profitable than one-time purchases.</p>
-                    <button className='uppercase font-[500] text-l border border-slate-950 px-5 py-2 hover:bg-black hover:text-white ease-linear duration-300 '>Subscribe Now</button>
+                    <h3 className='usblock font-[600] text-2xl tracking-wide'>service</h3>
+                    <h1 className='usblock font-[900] text-4xl tracking-widest'>Flower Subcriptions</h1>
+                    <p className='usblock text-wrap'>Experience the convenience and savings of regular flower deliveries with our flexible subscription service - up to 30% more profitable than one-time purchases.</p>
+                    <button className='usblock uppercase font-[500] text-l border border-slate-950 px-5 py-2 hover:bg-black hover:text-white ease-linear duration-300 '>Subscribe Now</button>
 
                 </div>
 
@@ -204,11 +170,11 @@ function Home() {
             <div className='h-[100vh] w-[100%] flex text-[#fff] justify-center items-center font-Gilroy'>
                 <img className='z-0 absolute' src={serviceSvg2} alt="Service Section" />
                 <div className='relative z-10 text-wrap w-[60%] flex flex-col justify-center items-center'>
-                    <h3>service</h3>
-                    <h1 className='text-6xl font-[900]'>Wedding & Event Decor</h1>
-                    <p>
+                    <h3 className='usblock'>service</h3>
+                    <h1 className='usblock text-6xl font-[900]'>Wedding & Event Decor</h1>
+                    <p className='usblock'>
                         Let our team of expert florists and designers create stunning, on-trend floral décor for your special day. Trust us to bring your vision to life.</p>
-                    <button className='uppercase font-[500] text-xl border border-slate-white px-5 py-2 hover:bg-white hover:text-black duration-300 ease-linear'>Inquire Now</button>
+                    <button className='usblock uppercase font-[500] text-xl border border-slate-white px-5 py-2 hover:bg-white hover:text-black duration-300 ease-linear'>Inquire Now</button>
                 </div>
             </div>
         </>

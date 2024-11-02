@@ -8,7 +8,7 @@ function Live() {
     const LiveData = data.LivePlants
     const bg = data.bg.bgLivePlants
     return (
-        <div >
+        <div className='h-[170vh]' >
             <div className='content grid grid-cols-4 h-[100vh] '>
                 <div className='ImgDiv col-span-2 h-max'>
                     <img src={bg} alt="" />

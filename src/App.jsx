@@ -10,6 +10,7 @@ import About from './components/AboutUs'
 import Category from './components/Category'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import SignIn from './Auth/SignIn'
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/fresheners' element={<Fresheners />} />
         <Route path='/about' element={<About />} />
         <Route path='/category' element={<Category />} />
+        <Route path='/SignIn' element={<SignIn />} />
       </Routes>
       <Footer></Footer>
     </>

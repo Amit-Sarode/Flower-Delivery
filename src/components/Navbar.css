@@ -73,7 +73,7 @@
 @keyframes apear {
     from {
         opacity: 0;
-        transform: translateY(50%);
+        transform: translateY(40%);
     }
 
     to {
@@ -85,5 +85,5 @@
 .usblock {
     animation: apear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 40% cover 50%;
 }
