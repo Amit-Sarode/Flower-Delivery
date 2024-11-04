@@ -6,13 +6,14 @@ function FreshFlowers() {
     const bg = data.bg.bgFreshFlowers;
 
     return (
-        <div className="h-auto flex">
+        <div className="h-full flex">
+            {/* Left side image section */}
             <div className="w-1/2 h-screen sticky top-0">
                 <img className="h-full w-full object-cover" src={bg} alt="background" />
             </div>
 
-            {/* Right side flower list */}
-            <div className="w-1/2 p-8 grid grid-cols-2 gap-6 overflow-y-auto">
+            {/* Right side aroma candle list */}
+            <div className="w-1/2  grid grid-cols-2 overflow-y-auto">
                 {FreshFlowersData.map((curr, index) => (
                     <div key={index} className="relative flex flex-col items-center h-auto overflow-hidden border border-gray-200 p-4 rounded-lg shadow-md">
                         <img

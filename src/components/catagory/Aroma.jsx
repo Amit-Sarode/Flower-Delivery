@@ -13,7 +13,7 @@ function Aroma() {
             </div>
 
             {/* Right side aroma candle list */}
-            <div className="w-1/2 p-8 grid grid-cols-2 gap-6 overflow-y-auto">
+            <div className="w-1/2  grid grid-cols-2 overflow-y-auto">
                 {AromaData.map((curr, index) => (
                     <div key={index} className="relative flex flex-col items-center h-auto overflow-hidden border border-gray-200 p-4 rounded-lg shadow-md">
                         <img
