@@ -9,9 +9,10 @@ import freshenersImage from '../assets/Home/card item-4.svg';
 function Category() {
     return (
         <>
-            <h1 className='sticky top-0 border border-slate-950 h-[100vh] w-[50%] flex justify-center items-center text-wrap font-sans font-semibold text-6xl float-left'>
+            <h1 className='sticky top-0 h-auto w-[50%] flex justify-center items-center text-wrap font-sans font-semibold text-6xl float-left pt-20'>
                 Choose a Сategory
             </h1>
+
             <div className=' page2 w-[50%] float-right font-Gilroy'>
                 <ProductCard path="/freshflowers" title="Fresh Flowers" imageSrc={freshFlowersImage} />
                 <ProductCard path="/dried" title="Dried Flowers" imageSrc={driedFlowersImage} />

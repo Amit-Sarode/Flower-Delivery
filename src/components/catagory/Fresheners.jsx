@@ -1,11 +1,12 @@
 import React from 'react'
+
 import data from '../../assets/data.json'
 
-function Fresheners() {
-    const FreshenersData = data.Fresheners
-    const bg = data.bg.bgFreshner
+function Live() {
+    const LiveData = data.LivePlants
+    const bg = data.bg.bgLivePlants
     return (
-        <div >
+        <div className='h-[170vh]' >
             <div className='content grid grid-cols-4 h-[100vh] '>
                 <div className='ImgDiv col-span-2 h-max'>
                     <img src={bg} alt="" />
@@ -13,7 +14,7 @@ function Fresheners() {
                 <div className='col-span-2' >
                     <div className='grid grid-cols-2'>
                         {
-                            FreshenersData.map((curr, index) => {
+                            LiveData.map((curr, index) => {
                                 return (
                                     <div key={index} className='relative flex justify-center h-max w-full overflow-hidden '>
                                         <img src={curr.path} alt="" className='transition-transform duration-200 ease-linear hover:scale-110' />
@@ -30,4 +31,4 @@ function Fresheners() {
     )
 }
 
-export default Fresheners
+export default Live

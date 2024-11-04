@@ -7,7 +7,6 @@ function FreshFlowers() {
 
     return (
         <div className="h-auto flex">
-            {/* Left side image section */}
             <div className="w-1/2 h-screen sticky top-0">
                 <img className="h-full w-full object-cover" src={bg} alt="background" />
             </div>
